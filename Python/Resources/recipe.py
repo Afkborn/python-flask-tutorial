@@ -23,7 +23,7 @@ class OgrencilerRecipe(Resource):
         
         return {
             "status": HTTPStatus.OK,
-            'Ogrenciler': dictOgrenciList}
+            'ogrenciler': dictOgrenciList}
 
 
 todos = {}              
@@ -40,7 +40,7 @@ class OgrenciRecipe(Resource):
         dictOgrenciList.append(dict(ogrenci))
         return {
             "status": HTTPStatus.OK,
-            'Ogrenciler': dictOgrenciList}
+            'ogrenciler': dictOgrenciList}
         
     def post(self, tc_kimlik_no):
         data = request.args
