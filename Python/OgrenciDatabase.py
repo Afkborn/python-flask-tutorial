@@ -7,7 +7,7 @@ CREATETABLE_OGRENCILER = """CREATE TABLE IF NOT EXISTS ogrenciler (id	INTEGER PR
 
 class Database():
     dbName = "okul.db"
-    dbLoc = fr"Databases\{dbName}"
+    dbLoc = fr"Databases/{dbName}"
     
     def __init__(self) -> None:
         self.createDB()
